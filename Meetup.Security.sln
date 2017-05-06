@@ -1,0 +1,61 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C1828481-7BE0-49C7-9277-048DE394ED85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meetup.Security.WebApi", "src\Meetup.Security.WebApi\Meetup.Security.WebApi.csproj", "{005F3F76-54C4-4397-A74E-DFACAF09A508}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meetup.Security.Entities", "src\Meetup.Security.Entities\Meetup.Security.Entities.csproj", "{AE8671A1-0551-49CD-91BC-529DEA1F1B16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meetup.Security.Shared", "src\Meetup.Security.Shared\Meetup.Security.Shared.csproj", "{7CBB1C8D-D6D4-441E-8DE8-60595D907E48}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meetup.Security.BusinessObjects", "src\Meetup.Security.BusinessObjects\Meetup.Security.BusinessObjects.csproj", "{195CFCA8-0C5A-41FA-8AD1-A86175816ABE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meetup.Security.Repositories", "src\Meetup.Security.Repositories\Meetup.Security.Repositories.csproj", "{3BB58759-CD30-469B-9416-7ED830BCD39D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meetup.Security.Middleware", "src\Meetup.Security.Middleware\Meetup.Security.Middleware.csproj", "{E8A3E41F-5FEA-415D-8A97-74D0385FDD66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{005F3F76-54C4-4397-A74E-DFACAF09A508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{005F3F76-54C4-4397-A74E-DFACAF09A508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{005F3F76-54C4-4397-A74E-DFACAF09A508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{005F3F76-54C4-4397-A74E-DFACAF09A508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE8671A1-0551-49CD-91BC-529DEA1F1B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8671A1-0551-49CD-91BC-529DEA1F1B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE8671A1-0551-49CD-91BC-529DEA1F1B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE8671A1-0551-49CD-91BC-529DEA1F1B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CBB1C8D-D6D4-441E-8DE8-60595D907E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CBB1C8D-D6D4-441E-8DE8-60595D907E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CBB1C8D-D6D4-441E-8DE8-60595D907E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CBB1C8D-D6D4-441E-8DE8-60595D907E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{195CFCA8-0C5A-41FA-8AD1-A86175816ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{195CFCA8-0C5A-41FA-8AD1-A86175816ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{195CFCA8-0C5A-41FA-8AD1-A86175816ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{195CFCA8-0C5A-41FA-8AD1-A86175816ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BB58759-CD30-469B-9416-7ED830BCD39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB58759-CD30-469B-9416-7ED830BCD39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB58759-CD30-469B-9416-7ED830BCD39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB58759-CD30-469B-9416-7ED830BCD39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8A3E41F-5FEA-415D-8A97-74D0385FDD66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8A3E41F-5FEA-415D-8A97-74D0385FDD66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8A3E41F-5FEA-415D-8A97-74D0385FDD66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8A3E41F-5FEA-415D-8A97-74D0385FDD66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{005F3F76-54C4-4397-A74E-DFACAF09A508} = {C1828481-7BE0-49C7-9277-048DE394ED85}
+		{AE8671A1-0551-49CD-91BC-529DEA1F1B16} = {C1828481-7BE0-49C7-9277-048DE394ED85}
+		{7CBB1C8D-D6D4-441E-8DE8-60595D907E48} = {C1828481-7BE0-49C7-9277-048DE394ED85}
+		{195CFCA8-0C5A-41FA-8AD1-A86175816ABE} = {C1828481-7BE0-49C7-9277-048DE394ED85}
+		{3BB58759-CD30-469B-9416-7ED830BCD39D} = {C1828481-7BE0-49C7-9277-048DE394ED85}
+		{E8A3E41F-5FEA-415D-8A97-74D0385FDD66} = {C1828481-7BE0-49C7-9277-048DE394ED85}
+	EndGlobalSection
+EndGlobal

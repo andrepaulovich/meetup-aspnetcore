@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard1.6</TargetFramework>
+        <AssemblyName>Meetup.Security.BusinessObjects</AssemblyName>
+        <PackageId>Meetup.Security.BusinessObjects</PackageId>
+        <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+        <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+        <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DebugType>full</DebugType>
+        <DebugSymbols>True</DebugSymbols>
+        <DocumentationFile>bin\Debug\netstandard1.6\.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+      <DocumentationFile>bin\Release\netstandard1.6\.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Meetup.Security.Shared\Meetup.Security.Shared.csproj" />
+    </ItemGroup>
+
+</Project>
