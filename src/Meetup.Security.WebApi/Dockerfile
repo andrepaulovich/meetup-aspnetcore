@@ -1,6 +1,5 @@
 FROM microsoft/aspnetcore:1.1
-ARG source
 WORKDIR /app
-EXPOSE 80
-COPY . .
+COPY . . 
+EXPOSE 5000
 ENTRYPOINT ["dotnet", "Meetup.Security.WebApi.dll"]
