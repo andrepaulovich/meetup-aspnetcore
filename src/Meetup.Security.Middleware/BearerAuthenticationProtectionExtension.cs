@@ -20,8 +20,8 @@ namespace Meetup.Security.Middleware
 
             var options = new TokenProviderOptions
             {
-                Audience = "http://Meetup.ciandt.com",
-                Issuer = "CI&T AD",
+                Audience = "http://meetup.random.com",
+                Issuer = "Paulovich",
                 SigningCredentials = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256),
             };
 

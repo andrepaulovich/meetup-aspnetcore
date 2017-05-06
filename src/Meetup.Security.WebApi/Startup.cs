@@ -11,7 +11,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Pivotal.Discovery.Client;
-using Steeltoe.Extensions.Configuration;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Meetup.Security.WebApi
@@ -23,9 +22,7 @@ namespace Meetup.Security.WebApi
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                .AddEnvironmentVariables()
-                .AddCloudFoundry()
-                .AddConfigServer(env);
+                .AddEnvironmentVariables();
 
             Configuration = builder.Build();
         }
@@ -43,10 +40,7 @@ namespace Meetup.Security.WebApi
             // Automapper
             services.AddAutoMapper();
             services.AddAutoMapperProfiles();
-
-            // Cloud config
-            services.AddConfigServer(Configuration);
-            
+                        
             // Repositories
             services.AddSecurityRepositories();
 
